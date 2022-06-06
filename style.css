@@ -157,16 +157,16 @@ body{
 }
 
 .footer-text{
-    display:flex;
-    width: 100%;
+    float: left;
+    width: 60%;
 }
 
 .footer-text p{
-    padding-left: 5%;
+    padding-left: 15%;
     color: white;
     font-family: 'PT Sans', sans-serif;
     font-size: 12px;
-    margin-top: 7%;
+    margin-top: 30%;
 }
 
 /* Media Queries*/
@@ -175,7 +175,8 @@ body{
     body{
         background-image: url("bg.jpg");
         background-repeat:no-repeat;
-        background-size:auto;
+        background-size: auto;
+        height: fit-content;
     }
 
     .container{
@@ -187,7 +188,10 @@ body{
     }
 
     .title{
+        display: flex;
+        flex-direction: column;
         padding: 20px 20px;
+        height: fit-content;
     }
 
     .main-title{
@@ -255,6 +259,11 @@ body{
         text-align: center;
         align-items: center;
         height: auto;
+    }
+
+    .footer-text{
+        float: left;
+        width: 100%;
     }
     
     .footer-text p{
